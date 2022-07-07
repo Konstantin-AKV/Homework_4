@@ -22,9 +22,8 @@ Console.WriteLine("A в степени B = " + pow);
  
 // Задача 27: Сумма всех чисел в указанной цифре
 
-Console.WriteLine("Введите число N: ");
+/* Console.WriteLine("Введите число N: ");
 int N = int.Parse(Console.ReadLine());
-
 int SumNumb(int N)
 {
     int sum = 0;
@@ -36,7 +35,25 @@ int SumNumb(int N)
     }
     return sum;
 }
-
 int sum_n = SumNumb(N);
-Console.WriteLine("Сумма цифр числа = " + sum_n);
+Console.WriteLine("Сумма цифр числа = " + sum_n); */
 
+
+// Задача 29: Напишите программу, которая задаёт массив
+// из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+
+void Print(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write(arr[i] + " ");
+    }
+    Console.WriteLine();
+}
+int[] mass = new int[8];
+for (int i = 0; i < mass.Length; i++)
+{
+    mass[i] = new Random().Next(0, 100);
+}
+Print(mass);
